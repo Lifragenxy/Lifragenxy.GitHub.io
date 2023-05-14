@@ -2,6 +2,7 @@ var a0c1 = 0;
 
 function searchPonu(data, content){
     for (key in data){
+        console.log(key);
         if (key == content){
             wording = document.getElementById('wording');
             wording.innerText = key;
@@ -90,15 +91,11 @@ function changeL(data, content){
 }
 
 function getData(content){
-    $.ajax({
-        url: "./database.json",
-        type: "GET",
-        dataType: "jsosn",
-        success:
-        function (data) {
+    var Ajax = function () {
+        $.getJSON("./database.json", function (data) {
             changeL(data, content);
-        }
-    })
+        });
+    }();
 }
 
 function search(){
