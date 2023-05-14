@@ -2,12 +2,29 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>index</title>
+<title>电子词典</title>
+
 </head>
 
 <body>
-	<h1>Hello World</h1>
+	<script type="text/javascript" src="./searching.js"></script>
+	<input type="button" value="搜索" id="searchbutton" onclick="search()">
+	
+	<input type="text" name="username" maxlength="100" value="" id="seecontent">
 	<hr />
-	<p>这是一个什么都没有的网页。</p>
+	
+	<form id="formunder">
+
+	<h1><p style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif'" id="wording">za fea wa</p></h1>
+	<hr />
+	
+	<h2>中文释义</h2>
+	<ul type="." id="showlist">
+		<li><p style="font-weight: bold">正交语</p>
+			<p>指这个语言本身。</p>
+		</li>
+	</ul>
+	</form>
+
 </body>
 </html>
