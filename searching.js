@@ -3,6 +3,7 @@ var a0c1 = 0;
 function searchPonu(data, content){
     for (key in data){
         console.log(key);
+        console.log(content);
         if (key == content){
             wording = document.getElementById('wording');
             wording.innerText = key;
