@@ -2,13 +2,13 @@ var a0c1 = 0;
 
 function searchPonu(data, content){
     for (key in data){
-        if (key == content){
+        if (key == content.value){
             wording = document.getElementById('wording');
             wording.innerText = key;
 
             showlist = document.getElementById("showlist");
             
-            showlist.removeChild();
+            showlist.innerHTML = "";
             for (transkey in data[key]){
                 let transitem = document.createElement('li');
                 let transstr = document.createElement('p');
@@ -98,7 +98,7 @@ function getData(content){
 }
 
 function search(){
-    content = document.getElementById('seecontent').value;
+    content = document.getElementById('seecontent');
     show_widget = document.getElementById('formunder');
 
     a0c1 = 0;
