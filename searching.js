@@ -2,8 +2,6 @@ var a0c1 = 0;
 
 function searchPonu(data, content){
     for (key in data){
-        console.log(key);
-        console.log(content);
         if (key == content){
             wording = document.getElementById('wording');
             wording.innerText = key;
@@ -100,7 +98,7 @@ function getData(content){
 }
 
 function search(){
-    content = document.getElementById('seecontent');
+    content = document.getElementById('seecontent').value;
     show_widget = document.getElementById('formunder');
 
     a0c1 = 0;
