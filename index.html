@@ -5,14 +5,35 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <title>电子词典</title>
 
+<style>
+	.div2{
+		float: right;
+		bottom: 20px;
+		position: relative;
+		
+	}
+	.hrh{
+		clear: both;
+	}
+	</style>
 </head>
 
 <body>
 	<script type="text/javascript" src="./searching.js"></script>
+	<div class="div1">
+		
 	<input type="button" value="搜索" id="searchbutton" onclick="search()">
 	
 	<input type="text" name="username" maxlength="100" value="" id="seecontent">
-	<hr />
+	</div>
+	
+	<div class="div2">
+<!--		<input type="radio" name="enable_en" id="en" value="en" checked><label for="en">字母注音</label>-->
+<!--		<input type="radio" name="enable_en" id="zf" value="zf" unchecked><label for="zf">正交语字符</label>-->
+		<a href="https://lifragenxy.github.io/commonothese-std-v2.ttf">点击下载字体</a>
+	</div>
+	
+	<hr name="hrh" />
 	
 	<form id="formunder">
 
