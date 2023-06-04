@@ -2,51 +2,63 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<title>电子词典</title>
-
+<title>正交语|学习·分享·创造</title>
+	
 <style>
-	.div2{
-		float: right;
-		bottom: 20px;
-		position: relative;
+	.bander{
+		text-align: center;
+	}
+	.bander hr{
+		border-width: 2px;
 		
 	}
-	.hrh{
-		clear: both;
+	.menu{
+		background-color: #7E6BFF;
+		border-radius: 10px;
+		margin: 10px auto 0px;
+		height: 60px;
+		width: 900px;
+		font-weight: bold;
+		font-size: 30px;
 	}
-	</style>
+	.menu span{
+		display: inline-block;
+		height: 40px;
+		padding: 10px 100px;
+		width: 90px;
+		text-align: center;
+	}
+	.menu span a{
+		text-decoration: none;
+		color: white;
+	}
+	.normalp {
+		margin: 30px auto 0px;
+	}
+
+</style>
 </head>
 
 <body>
-	<script type="text/javascript" src="./searching.js"></script>
-	<div class="div1">
-		
-	<input type="button" value="搜索" id="searchbutton" onclick="search()">
-	
-	<input type="text" name="username" maxlength="100" value="" id="seecontent">
+	<header>
+	<div id="bander" class="bander">
+		<h1>正交语 | Commonothese</h1>
+		<hr />
 	</div>
-	
-	<div class="div2">
-<!--		<input type="radio" name="enable_en" id="en" value="en" checked><label for="en">字母注音</label>-->
-<!--		<input type="radio" name="enable_en" id="zf" value="zf" unchecked><label for="zf">正交语字符</label>-->
-		<a href="https://lifragenxy.github.io/commonthese-std-v2.ttf">点击下载字体</a>
+	<div id="menu" class="menu">
+		<span><a href="./dictionary.html">词典</a></span>
+		<span><a href="./document.html">资料</a></span>
+		<span><a href="./char.html">字符表</a></span>
 	</div>
+	</header>
 	
-	<hr name="hrh" />
+	<p class="normalp">
+		正交语是一门人造语言。从文字的角度来看，它是表音文字中的音素文字，<br />即每个字符通常表达一个音素。在字型设计上，他选择了方正刚硬的线条，<br />以模仿碑文式的字体形成了独一无二的“文字氛围”。而文字的形状也是其<br />中文名称的来由。
+	</p>
 	
-	<form id="formunder">
-
-	<h1><p style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif'" id="wording">za fea wa</p></h1>
-	<hr />
+	<p class="normalp">
+		正交语以上文所提及的异界“文字氛围”为首要目标，以简单易学为第二目<br />标，设计了一套独特的词法与语法结构。在词法上，它结合了一部分的屈折<br />与占主要地位的黏着成分，从而降低词语记诵的难度。
+	</p>
 	
-	<h2 id="content_heading">中文释义</h2>
-	<ul type="." id="showlist">
-		<li><p style="font-weight: bold">正交语</p>
-			<p>指这个语言本身。</p>
-		</li>
-	</ul>
-	</form>
-
 </body>
 </html>

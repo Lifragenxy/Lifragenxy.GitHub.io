@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<title>电子词典</title>
+
+<style>
+	.div2{
+		float: right;
+		bottom: 20px;
+		position: relative;
+		
+	}
+	.hrh{
+		clear: both;
+	}
+	</style>
+</head>
+
+<body>
+	<script type="text/javascript" src="./searching.js"></script>
+	<div class="div1">
+		
+	<input type="button" value="搜索" id="searchbutton" onclick="search()">
+	
+	<input type="text" name="username" maxlength="100" value="" id="seecontent">
+	</div>
+	
+	<div class="div2">
+<!--		<input type="radio" name="enable_en" id="en" value="en" checked><label for="en">字母注音</label>-->
+<!--		<input type="radio" name="enable_en" id="zf" value="zf" unchecked><label for="zf">正交语字符</label>-->
+		<!-- <a href="https://lifragenxy.github.io/commonthese-std-v2.ttf">点击下载字体</a> -->
+	</div>
+	
+	<hr name="hrh" />
+	
+	<form id="formunder">
+
+	<h1><p style="font-family: Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif'" id="wording">za fea wa</p></h1>
+	<hr />
+	
+	<h2 id="content_heading">中文释义</h2>
+	<ul type="." id="showlist">
+		<li><p style="font-weight: bold">正交语</p>
+			<p>指这个语言本身。</p>
+		</li>
+	</ul>
+	</form>
+
+</body>
+</html>
